@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Container{
+    width: 100%;
+    background-color: aliceblue;
+    height: 100%;
+    min-height: 100vh;
+}
+.Container-Task{
+    max-width: 800px;
+    min-height: 600px;
+    margin:auto;
+    background-color: #FAFAFA;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    flex-direction: column;
+}
+.Letter-Header{
+    font-family: 'Syne Mono', monospace;
+    margin: auto;
+    color: rebeccapurple;
+}
+.Header{
+    text-align: center;
+}
+.form{
+    margin: 20px;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: #ece9e9;
+}
+.Input-Task, .Select{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    text-decoration: none;
+    outline: none;
+    margin: 5px;
+    color: rebeccapurple;
+    font-family: 'Syne Mono', monospace;
+}
+.Select{
+    color: black;
+}
+.button{
+    border: 2px solid black;
+    background-color: #006DFF;
+    box-shadow: 0px 1px 5px 1px #000000;
+    color: white;
+    font-family: 'Syne Mono', monospace;
+    margin: 10px;
+    width: 80px;
+    height: 30px;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 1.5s;
+}
+.button:hover{
+    background-color: #0097FF;
+}
+/*-----------------------*/
+.Taks{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.Task-Key{
+    border-radius: 30px;
+    background-color:#006DFF;
+    box-shadow: 0px 1px 4px 1px #000000;
+    text-align: center;
+    width: 60%;
+    margin: 10px auto;
+
+    flex-direction: row;
+}
+.Letter-Task{
+    display: inline-block;
+}
+.actu, .elim{
+    font-size: 9px;
+    background-color: #FBFBFB;
+    width: 60px;
+    height: 30px;
+    color: black;
+}
+.elim{
+    background-color: #FF0051;
+}
+.elim:hover{
+    background-color: #ff0015;
+}
+
+/*------------ESTILO PRIORIDADES--------------*/
+
+.low{
+    background-color:#02d12f;
+}
+.normal{
+    background-color:#006DFF;
+}
+.high{
+    background-color:#ff004c;
+}
+
+/*----------------MODAL--------------------*/
+
+.Modal{
+    background-color: rgba(49, 48, 48, 0.5);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    transition: all 5s;
+}
+.Modal-child{
+    width:  600px;
+    height: 500px;
+    text-align: center;
+    margin: auto;
+}
+.button-Cerrar{
+    margin: 20px;
+    width: 50px;
+    height: 50px;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    border: none;
+    color: crimson;
+    font-family:'Staatliches', cursive ;
+    font-size: 20px;
+    transition: color .3s;
+    border-radius: 40px;
+}
+.button-Cerrar:hover{
+    color: rgb(255, 0, 0);
+}

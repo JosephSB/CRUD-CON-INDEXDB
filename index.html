@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title>CRUD</title>
+</head>
+<body>
+    <div class="Container">   
+        <div class="Container-Task">
+            <header class="Header">
+                <h1 class="Letter-Header">TUS TAREAS</h1>
+                <form class="form" id="form">
+                    <input  class="Input-Task" placeholder="Escribe tu Tarea" type="text" name="task">
+                    <select class="Select" name="priority">
+                        <option value="low">Baja</option>
+                        <option value="normal">Normal</option>
+                        <option value="high">Urgente</option>
+                    </select>
+                    <button class="button" name="button" data-action="add">Añadir</button>
+                </form>
+            </header>
+
+            <section class="Taks" id="tasks">
+            </section>
+
+            <div class="Modal" id="Modal">
+                <div class="Modal-child">
+                    <h1 class="Letter-Header">ACTUALIZAR TAREA</h1>
+                    <form class="form" id="newform" action="#">
+                        <input  class="Input-Task" placeholder="Actualiza Tarea" type="text" name="newtask">
+                        <select class="Select" name="newpriority">
+                            <option value="low">Baja</option>
+                            <option value="normal">Normal</option>
+                            <option value="high">Urgente</option>
+                        </select>
+                        <button class="button" name="newbutton" data-action="Actualizar">Añadir</button>
+                        <button class="button-Cerrar" id="Cerrar-update" name="newbutton" data-action="Eliminar" ><i class="fas fa-window-close"></i></button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+    <script src="https://kit.fontawesome.com/23fca06461.js" crossorigin="anonymous"></script>
+</body>
+</html>
